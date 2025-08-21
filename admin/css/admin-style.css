@@ -1,0 +1,237 @@
+/* Settings Page Styles */
+.mce-settings-wrap {
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+/* Settings Tabs */
+.mce-tab-nav {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mce-settings-tab {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+}
+
+.mce-settings-tab.nav-tab-active {
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+/* Settings Form */
+.mce-settings-form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.mce-settings-form .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.mce-settings-form .form-table td {
+    padding: 15px 10px;
+}
+
+.mce-settings-form input[type="text"],
+.mce-settings-form input[type="email"],
+.mce-settings-form textarea {
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Settings Sections */
+.mce-settings-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mce-settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Enquiry List Page */
+.post-type-mce_enquiry .column-customer_name {
+    width: 15%;
+}
+
+.post-type-mce_enquiry .column-customer_email {
+    width: 20%;
+}
+
+.post-type-mce_enquiry .column-customer_phone {
+    width: 15%;
+}
+
+.post-type-mce_enquiry .column-date {
+    width: 15%;
+}
+
+/* Status Indicators */
+.mce-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.mce-status-new {
+    background: #e7f7ff;
+    color: #0073aa;
+}
+
+.mce-status-read {
+    background: #edfaef;
+    color: #1eb74d;
+}
+
+/* Meta Box Styles */
+.mce-meta-box {
+    margin: 20px 0;
+}
+
+.mce-meta-box-row {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mce-meta-box-row:last-child {
+    border-bottom: none;
+}
+
+.mce-meta-box-label {
+    flex: 0 0 120px;
+    font-weight: 600;
+}
+
+.mce-meta-box-value {
+    flex: 1;
+}
+
+/* Dashboard Widget */
+#mce_dashboard_widget .inside {
+    padding: 0;
+    margin: 0;
+}
+
+.mce-dashboard-list {
+    margin: 0;
+}
+
+.mce-dashboard-list li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+
+.mce-dashboard-list li:last-child {
+    border-bottom: none;
+}
+
+.mce-dashboard-list .mce-enquiry-date {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Help Tips */
+.mce-help-tip {
+    color: #666;
+    display: inline-block;
+    font-size: 1.1em;
+    font-style: normal;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.mce-help-tip::after {
+    font-family: Dashicons;
+    content: "\f223";
+}
+
+/* Notice Styles */
+.mce-notice {
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+}
+
+.mce-notice-success {
+    border-left-color: #46b450;
+}
+
+.mce-notice-error {
+    border-left-color: #dc3232;
+}
+
+.mce-notice-warning {
+    border-left-color: #ffb900;
+}
+
+/* Export/Import Section */
+.mce-import-export {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.mce-import-export .button {
+    margin: 0 10px 10px 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .mce-settings-form .form-table th {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .mce-settings-form input[type="text"],
+    .mce-settings-form input[type="email"],
+    .mce-settings-form textarea {
+        width: 100%;
+    }
+
+    .post-type-mce_enquiry .column-customer_name,
+    .post-type-mce_enquiry .column-customer_email,
+    .post-type-mce_enquiry .column-customer_phone {
+        display: none;
+    }
+}
+
+/* RTL Support */
+.rtl .mce-settings-form .form-table th {
+    padding: 20px 0 20px 10px;
+}
+
+.rtl .mce-meta-box-label {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.rtl .mce-notice {
+    border-left: none;
+    border-right: 4px solid #fff;
+}

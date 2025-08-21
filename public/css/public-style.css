@@ -1,0 +1,475 @@
+/* General Styles for the Enquiry Form */
+.mce-cart-enquiry-form {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.mce-loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mce-loading-content {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mce-loading-spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: mce-spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.mce-loading-text {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes mce-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mce-btn-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: mce-spin 1s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.mce-form-row {
+    margin-bottom: 15px;
+}
+
+.mce-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.mce-form-row input[type="text"],
+.mce-form-row input[type="email"],
+.mce-form-row input[type="tel"],
+.mce-form-row textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.mce-form-row textarea {
+    min-height: 100px;
+}
+
+.mce-form-row input.error,
+.mce-form-row textarea.error {
+    border-color: #dc3545;
+}
+
+.mce-form-row button[type="submit"] {
+    background: #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.mce-form-row button[type="submit"]:hover {
+    background: #135e96;
+}
+
+.mce-form-row button[type="submit"]:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.mce-message {
+    display: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.mce-message.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.mce-message.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+/* Hide WooCommerce elements */
+.cart-subtotal, 
+.order-total,
+.cart-collaterals .cart_totals,
+.coupon,
+.woocommerce-form-coupon-toggle,
+.cart_totals,
+.woocommerce-shipping-calculator,
+.shipping-calculator-button,
+.woocommerce-shipping-totals {
+    display: none !important;
+}
+
+/* Product Variation Styles */
+.variations {
+    margin-bottom: 20px;
+}
+
+.variations td.label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.variations td.value select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.variations td.value .select2-container {
+    width: 100% !important;
+}
+
+.variations td.value .select2-selection {
+    height: 38px;
+    line-height: 36px;
+}
+
+.woocommerce-variation-add-to-cart {
+    margin-top: 20px;
+}
+
+.woocommerce-variation-add-to-cart .button {
+    background: #0073aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.woocommerce-variation-add-to-cart .button:hover {
+    background: #005177;
+}
+
+/* Success Message Styles */
+.mce-success-wrapper {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.mce-success-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.mce-success-wrapper h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.mce-success-wrapper p {
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.mce-buttons {
+    margin-top: 30px;
+}
+
+.mce-buttons .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.mce-buttons .button:hover {
+    background: #2980b9;
+}
+
+/* Basic Form Styles */
+.mce-enquiry-form {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.mce-enquiry-form .form-row {
+    margin-bottom: 15px;
+}
+
+.mce-enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.mce-enquiry-form input[type="text"],
+.mce-enquiry-form input[type="email"],
+.mce-enquiry-form input[type="tel"],
+.mce-enquiry-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.mce-enquiry-form button[type="submit"] {
+    background: #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mce-enquiry-form button[type="submit"]:hover {
+    background: #135e96;
+}
+
+.mce-enquiry-form button[type="submit"]:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.mce-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.mce-message.success {
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.mce-message.error {
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.mce-cart-enquiry-button-wrapper {
+    margin: 20px 0;
+    text-align: right;
+}
+
+/* Loading State Styles */
+#mce-cart-enquiry-form-wrapper {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+#mce-response-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#mce-response-message.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+#mce-response-message.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+#mce-response-message.loading {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    color: #495057;
+}
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mce-enquiry-form {
+    margin-top: 15px;
+}
+
+#mce-enquiry-form .form-row {
+    margin-bottom: 15px;
+}
+
+#mce-enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#mce-enquiry-form input[type="text"],
+#mce-enquiry-form input[type="email"],
+#mce-enquiry-form input[type="tel"],
+#mce-enquiry-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#mce-enquiry-form textarea {
+    height: 100px;
+}
+
+#mce-enquiry-form button[type="submit"] {
+    background-color: #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mce-enquiry-form button[type="submit"]:hover {
+    background-color: #135e96;
+}
+
+#mce-enquiry-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mce-thank-you-message {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border: 2px solid #28a745;
+}
+
+.mce-thank-you-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 20px;
+    background: #e8f5e9;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.mce-thank-you-message h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mce-thank-you-details {
+    margin: 20px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.mce-thank-you-details p {
+    margin-bottom: 10px;
+}
+
+.mce-thank-you-actions {
+    margin-top: 30px;
+}
+
+.mce-thank-you-message .button.continue-shopping {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mce-thank-you-message .button.continue-shopping:hover {
+    background-color: #218838;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
